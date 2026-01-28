@@ -22,7 +22,7 @@
     /* .card {
       duplicate selector created again to add new styles.
     } */
-*/
+    
 
 /*
   TODO 0: Link the style sheet using the link tag inside the head tag.
@@ -252,3 +252,120 @@ body {
   z-index: 2;
   transform: translate(18px, -18px);
 }
+/* TODO 1 */
+:root {
+  --brand: #2563eb;
+  --brand-dark: #1d4ed8;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* TODO 2 */
+.site-header,
+.site-footer {
+  background: var(--card);
+}
+
+.tagline {
+  color: var(--muted);
+}
+
+
+
+/* TODO 3 */
+.color-demo .color-note {
+  color: var(--brand);
+  font-weight: 700;
+}
+
+.color-demo .muted {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.bg-sample {
+  width: 100%;
+  min-height: 80px;
+  padding: 0.75rem;
+  margin-block: 0.75rem;
+  border-radius: 12px;
+  color: #fff;
+  background: linear-gradient(135deg, var(--brand), #22c55e);
+}
+
+/* TODO 4 */
+.inline-label {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+}
+
+.inline-label.alt {
+  display: inline-block;
+  border-style: dashed;
+}
+
+/* TODO 5 */
+.copy .title {
+  font-size: 1.25rem;
+  font-weight: 650;
+  text-transform: capitalize;
+}
+
+.copy .intro {
+  font-style: italic;
+  line-height: 1.6;
+  margin-top: 0.25rem;
+}
+
+/* TODO 6 */
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.btn {
+  padding: 0.5rem 0.75rem;
+  border: 0;
+  cursor: pointer;
+  background: var(--brand);
+  color: #fff;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background: var(--brand-dark);
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.product-grid .item {
+  flex: 1 1 140px;
+  min-height: 90px;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 700;
+}
+
+/* TODO 7 */
+.static-box {
+  padding: 0.5rem 0.75rem;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.05);
+  margin-bottom: 0.5r}
