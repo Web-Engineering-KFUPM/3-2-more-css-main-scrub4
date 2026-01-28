@@ -279,7 +279,7 @@ body {
 /* TODO 3 */
 .color-demo .color-note {
   color: var(--brand);
-  font-weight: 700;
+  font-weight: bold;
 }
 
 .color-demo .muted {
